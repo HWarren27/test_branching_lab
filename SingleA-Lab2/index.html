@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8>">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SingleA Lab 2</title>
+    <style>
+        /* Base Styles */
+        body {background-color: rgb(196, 193, 193); }
+        html { margin: 0; padding: 0; font-family: 'Segoe UI', sans-serif; line-height: 1.6; }
+        section { padding: 80px 20px; text-align: center; }
+        h2 { font-size: 2.5rem; margin-bottom: 20px; color: white;}
+        
+        /* Section 1: About Me (Blue) */
+        #me {
+            background: #2c3e50;
+            color: black;
+            min-height: 40vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+        }
+        .grid1 {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            flex-wrap: wrap;
+            max-width: 1000px;
+            margin: 0 auto;
+        }
+        .card1 {
+            background: #f6f7bf;
+            padding: 20px;
+            border-radius: 8px;
+            width: 250px;
+        }
+        /* Section 2: Project Description (White) */
+        #project {
+            background: rgb(196, 193, 193);
+            color: #333;
+        }
+        .grid2 {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            flex-wrap: wrap;
+            max-width: 1000px;
+            margin: 0 auto;
+        }
+        .card2 {
+            background: #93f0f7;
+            padding: 20px;
+            border-radius: 8px;
+            width: 250px;
+        }
+        /* Section 3: Contact/CTA (Green) */
+        #contact {
+            background: #27ae60;
+            color: white;
+        }
+        .btn {
+            display: inline-block;
+            background: white;
+            color: #27ae60;
+            padding: 12px 30px;
+            text-decoration: none;
+            font-weight: bold;
+            border-radius: 5px;
+            margin-top: 20px;
+        }
+        
+    </style>
+</head>
+<body>
+    <section id="me">
+        <div class="card">
+        </div>
+        <h2>About Peter C.</h2>
+        <div class="grid1">
+            <div class="card1">
+                <h3>Fun Facts</h3>
+                <ul style="text-align: left;">
+                    <li>Got 99 Problems, but...</li>
+                    <li>Coffee Lover</li>
+                    <li>Musician - Dummer</li>
+                </ul>
+            </div>
+            <div class="card1">
+                <h3>Hobbies</h3>
+                <ul style="text-align: left;">
+                    <li>Gym Rat & Enjoy Cycling</li>
+                    <li>Reading</li>
+                    <li>Movies: Action, Thriller, Horror, Sci-fi, Comedy</li>
+                </ul>
+            </div>
+            <div class="card1">
+                <h3>Aspirations</h3>
+                <ul style="text-align: left;">
+                    <li>Multi-mill Business</li>
+                    <li>World Traveler</li>
+                    <li>Philanthropist</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <section id="project">
+        <h2 style="color: #FF0000;">Project Description</h2>
+        <div class="grid2">
+            <div class="card2">
+                <b>
+                    <p>This lab introduces Linux automation and cloud initialization by writing a startup/Bash script that configures an EC2 instance to host a front-facing static website.</p>
+                    <p>The Bash script automates server setup without manual intervention</p>
+                </b>
+            </div>
+            <div>
+                <img src="https://img.theweek.in/content/dam/week/news/entertainment/images/2019/4/26/thanos-avengers-infinity.jpg" width="550" height="340" alt="">
+            </div>
+        </div>
+    </section>
+
+    <section id="contact">
+        <h2>Ready to Scale?</h2>
+        <p>Connect this instance to an Auto Scaling Group for high availability.</p>
+        <a href="https://docs.aws.amazon.com/autoscaling/ec2/userguide/what-is-amazon-ec2-auto-scaling.html" class="btn">View Documentation</a>
+    </section>
+</body>
+</html>
